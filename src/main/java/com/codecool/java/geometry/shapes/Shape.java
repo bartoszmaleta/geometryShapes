@@ -9,6 +9,7 @@ public abstract class Shape {
     private String name;
     private String areaFormula;
     private String perimeterFormula;
+    
 
     public abstract String toString();
     /**
@@ -66,6 +67,14 @@ public abstract class Shape {
 
     public void setAreaFormula(String areaFormula) {
         this.areaFormula = areaFormula;
+    }
+
+    public String getAreaFormula() {
+        return areaFormula;
+    }
+
+    public String getPerimeterFormula() {
+        return perimeterFormula;
     }
 
     public void setPerimeterFormula(String perimeterFormula) {
