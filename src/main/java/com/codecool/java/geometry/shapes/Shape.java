@@ -10,7 +10,12 @@ public abstract class Shape {
     private String areaFormula;
     private String perimeterFormula;
     
-
+    public Shape(String name, String areaFormula, String perimeterFormula) {
+        this.name = name;
+        this.areaFormula = areaFormula;
+        this.perimeterFormula = perimeterFormula;
+    }
+    
     public abstract String toString();
     /**
      * convert to String
@@ -80,4 +85,6 @@ public abstract class Shape {
     public void setPerimeterFormula(String perimeterFormula) {
         this.perimeterFormula = perimeterFormula;
     }
+
+
 }
