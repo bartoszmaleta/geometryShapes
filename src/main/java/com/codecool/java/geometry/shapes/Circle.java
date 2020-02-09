@@ -5,7 +5,7 @@ public class Circle extends Shape {
 
 
     public Circle(float r) {
-        super("Circle", "pi*r^2", "2*pi*r");
+        super("Circle", "pi * r^2", "2 * pi * r");
         checkIfArgsGreaterThanZero(r);
         this.r = r;
         // super.name = "Circle";

@@ -33,7 +33,8 @@ public class ShapeList {
 
     public String getShapesTable() {
         String tableInfo = "";
-        int tableLen = 125;
+        int tableLen = 136;
+        tableInfo += "\n";
 
         for (int i = 0; i < shapes.size(); i++) {
             Shape shape = this.getShapeAt(i);
@@ -46,13 +47,14 @@ public class ShapeList {
             String perimeterFormula = shape.getPerimeterFormula();
             String areaFormula = shape.getAreaFormula();
 
-            for (int j = 0; j < tableLen; j++) {
+            for (int j = 0; j < tableInfo.length(); j++) {
                 tableInfo += "-";
             }
             tableInfo += "\n";
 
             Formatter formatter = new Formatter();
-            tableInfo += formatter.format("%2d | %19s | %35s | %6.2f | %10s | %6.2f | %27s |\n", i, shapeName, shapeParemetersInfo, perimeter, perimeterFormula, area, areaFormula);
+            tableInfo += formatter.format("| %2d | %20s | %38s | %6.2f | %10s | %6.2f | %27s |\n", i, shapeName, shapeParemetersInfo, perimeter, perimeterFormula, area, areaFormula);
+            // tableInfo += "\n";
         }
 
         for (int j = 0; j < tableLen; j++) {

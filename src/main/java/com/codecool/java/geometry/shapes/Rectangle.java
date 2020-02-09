@@ -5,7 +5,7 @@ public class Rectangle extends Shape {
     private float b;
 
     public Rectangle(float a, float b) {
-        super("Rectangle", "2a + 2b", "axb");
+        super("Rectangle", "2a + 2b", "a x b");
         checkIfArgsGreaterThanZero(a, b);
         this.a = a;
         this.b = b;

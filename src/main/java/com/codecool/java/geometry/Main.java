@@ -45,7 +45,7 @@ public class Main {
     private static void chooseOption(ShapeList shapes) {
         System.out.println("What shape u wanna add? \n 1.Circle \n 2.Trianlge \n 3.Equilateral triangle \n 4.Rectangle \n 5.Square \n 6.Pentagon");
         Scanner scanner = new Scanner(System.in);
-        int option = scanner.nextInt();
+        int option = scanner.nextInt(); 
  
         switch (option) {
         case 1:

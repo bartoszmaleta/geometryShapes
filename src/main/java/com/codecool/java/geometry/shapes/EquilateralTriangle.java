@@ -7,7 +7,7 @@ public class EquilateralTriangle extends Triangle {
         super(a, a, a);
         super.name = "Equilateral Triangle";
         super.areaFormula = "sqrt(s(s-a)(s-b)(s-c))";
-        super.perimeterFormula = "a + b + c";
+        super.perimeterFormula = "a + a + a";
     }
 
     public double calculateArea(){
