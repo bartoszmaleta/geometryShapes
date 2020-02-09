@@ -1,9 +1,14 @@
 package main.java.com.codecool.java.geometry;
 // package com.codecool.java.geometry;
 
+import java.util.Scanner;
+
 import main.java.com.codecool.java.geometry.containers.ShapeList;
+import main.java.com.codecool.java.geometry.shapes.*;
 
 public class Main {
+    ShapeList shapes = new ShapeList();
+    boolean isRunning = true;
 
     // public static void main(String[] args) {
 	//     ShapeList shapes = new ShapeList();
@@ -80,28 +85,28 @@ public class Main {
  
         switch (option) {
         case 1:
-            shapes.addShape(new Circle(getVariable("give r:")));
+            shapes.addShape(new Circle(getVariable("r")));
             break;
         case 2:
-            shapes.addShape(new Triangle(getVariable("give a"),getVariable("give b:"), getVariable("give c:")));
+            shapes.addShape(new Triangle(getVariable("a"),getVariable("b"), getVariable("c")));
             break;
         case 3:
-            shapes.addShape(new EquilateralTriangle(getVariable("give a:")));
+            shapes.addShape(new EquilateralTriangle(getVariable("a")));
             break;
         case 4:
-            shapes.addShape(new Rectangle(getVariable("give a:"),getVariable("give b:")));
+            shapes.addShape(new Rectangle(getVariable("a"),getVariable("b")));
             break;
         case 5:
-            shapes.addShape(new Square(getVariable("give a:")));
+            shapes.addShape(new Square(getVariable("a")));
             break;
         case 6:
-            shapes.addShape(new RegularPentagon(getVariable("give a:")));
+            shapes.addShape(new RegularPentagon(getVariable("a")));
             break;
         }
     }
  
     private static int getVariable(String variableName) {
-        System.out.println(variableName);
+        System.out.println("Please enter " + variableName);
         Scanner scanner = new Scanner(System.in);
         int variable = 0;
         try {
