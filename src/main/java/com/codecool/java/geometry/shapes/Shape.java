@@ -1,7 +1,6 @@
 
 package main.java.com.codecool.java.geometry.shapes;
 
-import main.java.com.codecool.java.NotYetImplementedException;
 /**
  * This is a abstract class representing geometrical shape.
  */
@@ -58,7 +57,6 @@ public abstract class Shape {
                 throw new IllegalArgumentException("All arguments must be greater than zero");
             }
         }
-        // throw new NotYetImplementedException();
         return true;
     }
 
