@@ -1,6 +1,7 @@
-package com.codecool.java.geometry;
+package main.java.com.codecool.java.geometry;
+// package com.codecool.java.geometry;
 
-import com.codecool.java.geometry.containers.ShapeList;
+import main.java.com.codecool.java.geometry.containers.ShapeList;
 
 public class Main {
 
