@@ -5,9 +5,9 @@ package main.java.com.codecool.java.geometry.shapes;
  * This is a abstract class representing geometrical shape.
  */
 public abstract class Shape {
-    private String name;
-    private String areaFormula;
-    private String perimeterFormula;
+    public String name;
+    public String areaFormula;
+    public String perimeterFormula;
     
     public Shape(String name, String areaFormula, String perimeterFormula) {
         this.name = name;
