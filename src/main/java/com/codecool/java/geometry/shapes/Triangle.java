@@ -4,7 +4,7 @@ package main.java.com.codecool.java.geometry.shapes;
 public class Triangle extends Shape {
     private float a, b, c;
 
-    public Triangle(String name, String areaFormula, String perimeterFormula, float a, float b, float c) {
+    public Triangle(float a, float b, float c) {
         super("Triangle", "sqrt(s(s-a)(s-b)(s-c))", "a + b + c");
         checkIfArgsGreaterThanZero(a,b,c);
         this.a = a;
